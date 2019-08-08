@@ -138,8 +138,8 @@ video#bgvid {
     margin: 4px 4px 4px 4px !important;
 }
 .boardz img {
-    max-width: 40%;
-    max-height: 20%;
+    max-width: 100%;
+    max-height: 100%;
 }
 .beautiful li {
     border: none !important;
