@@ -11,7 +11,7 @@
       <!-- IDEA:<video playsinline autoplay muted loop poster="img/asap.gif" id="bgvid">
     <source src="img/asap.gif" type="video/mp4">
 </video>   -->
-      <a class="back "href="index.html">home</a>
+      <a class="back "href="home.html">home</a>
       <a class="shop" href="shop.html">shop</a>
       <a href="#">lookbook</a>
       <a href="#">media</a>
@@ -26,25 +26,70 @@
       <hr class="hr2">
 <br>
       <h3><i>New</i>  Products :</h3>
+      <a class="all"href="shop.html">all</a>
+      <a href="tshirt.html">t-shirts</a>
+      <a href="hoodie.html">jumpers / hoodies</a>
+      <a href="trousers.html">trousers / Pants</a>
+      <a href="acc.html">accessories</a>
       <div class="boardz centered-block">
           <ul>
-          <li><img src="https://cdn.shopify.com/s/files/1/1702/4945/products/holiday_main_001_1512x.jpg?v=1563981947" alt="demo image"/></li>
+          <li><img src="img/holiday.jpg" alt="demo image"/></li>
           <li><img src="https://cdn.shopify.com/s/files/1/1702/4945/products/2G2A4490a_1512x.jpg?v=1563982631" alt="demo image"/></li>
-          <li><img src="https://cdn.shopify.com/s/files/1/1702/4945/products/holiday_main_009_1512x.jpg?v=1563980977" alt="demo image"/></li>
-          <li><img src="https://cdn.shopify.com/s/files/1/1702/4945/products/holiday_main_006_1512x.jpg?v=1563980758" alt="demo image"/></li>
+          <li><img src="img/holiday.jpg" alt="demo image"/></li>
+          <li><img src="img/holiday.jpg" alt="demo image"/></li>
+          <li><img src="img/holiday.jpg" alt="demo image"/></li>
+          <li><img src="img/holiday.jpg" alt="demo image"/></li>
           </ul>
           <ul>
-            <li><img src="https://cdn.shopify.com/s/files/1/1702/4945/products/holiday_main_001_1512x.jpg?v=1563981947" alt="demo image"/></li>
-          <li><img src="https://cdn.shopify.com/s/files/1/1702/4945/products/2G2A4490a_1512x.jpg?v=1563982631" alt="demo image"/></li>
-          <li><img src="https://cdn.shopify.com/s/files/1/1702/4945/products/holiday_main_009_1512x.jpg?v=1563980977" alt="demo image"/></li>
-          <li><img src="https://cdn.shopify.com/s/files/1/1702/4945/products/holiday_main_006_1512x.jpg?v=1563980758" alt="demo image"/></li>
+            <li><img src="https://cdn.shopify.com/s/files/1/1702/4945/products/holiday_main_014_1512x.jpg?v=1563981584" alt="demo image"/></li>
+            <li><img src="img/holiday.jpg" alt="demo image"/></li>
+            <li><img src="img/holiday.jpg" alt="demo image"/></li>
+            <li><img src="img/holiday.jpg" alt="demo image"/></li>
+            <li><img src="img/holiday.jpg" alt="demo image"/></li>
+            <li><img src="img/holiday.jpg" alt="demo image"/></li>
           </ul>
           <ul>
-            <li><img src="https://cdn.shopify.com/s/files/1/1702/4945/products/holiday_main_001_1512x.jpg?v=1563981947" alt="demo image"/></li>
-          <li><img src="https://cdn.shopify.com/s/files/1/1702/4945/products/2G2A4490a_1512x.jpg?v=1563982631" alt="demo image"/></li>
-          <li><img src="https://cdn.shopify.com/s/files/1/1702/4945/products/holiday_main_009_1512x.jpg?v=1563980977" alt="demo image"/></li>
-          <li><img src="https://cdn.shopify.com/s/files/1/1702/4945/products/holiday_main_006_1512x.jpg?v=1563980758" alt="demo image"/></li>
+            <li><img src="img/holiday.jpg" alt="demo image"/></li>
+            <li><img src="img/holiday.jpg" alt="demo image"/></li>
+            <li><img src="img/holiday.jpg" alt="demo image"/></li>
+            <li><img src="img/holiday.jpg" alt="demo image"/></li>
+            <li><img src="img/holiday.jpg" alt="demo image"/></li>
+            <li><img src="img/holiday.jpg" alt="demo image"/></li>
           </ul>
     </div>
+
+    <footer>Influence Worldwide 2019©</footer>
+    <div id="clockbox"></div>
+
+    <div id="clockbox"></div>
+
+<script type="text/javascript">
+    var tmonth=["January","February","March","April","May","June","July","August","September","October","November","December"];
+
+    function GetClock(){
+    var d=new Date();
+    var nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getFullYear();
+
+    var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds(),ap;
+
+    if(nhour==0){ap=" AM";nhour=12;}
+    else if(nhour<12){ap=" AM";}
+    else if(nhour==12){ap=" PM";}
+    else if(nhour>12){ap=" PM";nhour-=12;}
+
+    if(nmin<=9) nmin="0"+nmin;
+    if(nsec<=9) nsec="0"+nsec;
+
+    var clocktext=""+tmonth[nmonth]+" "+ndate+", "+nyear+" "+nhour+":"+nmin+":"+nsec+ap+"";
+    document.getElementById('clockbox').innerHTML=clocktext;
+  }
+
+  GetClock();
+  setInterval(GetClock,1000);
+</script>
+
+
+
+
   </body>
 </html>
