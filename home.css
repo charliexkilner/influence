@@ -16,8 +16,7 @@ a{
   font-family: 'Poppins', sans-serif;
 }
 a:hover{
-  background-color: #3a45c5;;
-  color: black;
+  text-decoration:underline;
 }
 .menu{
   text-align: right;
