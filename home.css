@@ -46,7 +46,9 @@ header{
 footer{
   font-family: 'Poppins', sans-serif;
 }
-
+hr{
+  width:80%;
+}
 
 
 video#bgvid {
